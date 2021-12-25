@@ -87,7 +87,7 @@ client.connect(err => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World again!')
 })
 
-app.listen( process.env.PORT || port)
+app.listen( process.env.PORT || port , console.log("listen port 5000"))
