@@ -16,8 +16,8 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     // console.log(err)//errorno jodi undefined ashe tahole db connect tik vabe hoice
-    const allCollection = client.db(`${process.env.DB_NAME}`).collection(`${process.env.allCollection}`);
-    const registeredCollection = client.db(`${process.env.DB_NAME}`).collection(`${process.env.registeredCollection}`);
+    const allCollection = client.db(`${process.env.DB_NAME}`).collection(`${process.env.DB_allCollection}`);
+    const registeredCollection = client.db(`${process.env.DB_NAME}`).collection(`${process.env.DB_registeredCollection}`);
 
 
     //fakeData tekhe sob data db te insert kora hoice.tar jnno ek ta action kora lagce post korte Ul tekhe.korar por oi ta kete dici.example button create kore onclick diye fetch ta patanu hoice 
